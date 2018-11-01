@@ -1,6 +1,6 @@
 -----------------------------------------------------------
 （未使用hash表：字典）思路关键：a = t - b 
-```python
+```py
 class Solution(object):
     def twoSum(self, nums, target):
         """
@@ -22,7 +22,7 @@ class Solution(object):
 
 -----------------------------------------------------------
 （使用hash表：字典）思路关键：a = t - b （提交不成功，输出格式问题懒得改了）
-```python
+```py
 class Solution(object):
     def twoSum(self, nums, target):
         """
