@@ -1,3 +1,6 @@
+一位一位的计算
+
+```py
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, x):
@@ -14,7 +17,7 @@ class Solution:
         :rtype: ListNode
         """
         S = ListNode(l1.val + l2.val)
-        carry = 0
+        carry = 0 #进位符
         if S.val > 9:
             S.val = S.val - 10
             carry = 1
@@ -27,7 +30,7 @@ class Solution:
             if l2.next is None:
                 l2.next = ListNode(0)
             l1.next.val = l1.next.val + carry
-            S.next = self.addTwoNumbers(l1.next, l2.next)
+            S.next = self.addTwoNumbers(l1.next, l2.next)# 递归
             return S
 			
 ##########################################
@@ -61,3 +64,4 @@ class Solution:
         S = Sr.next
         del Sr
         return S
+```
