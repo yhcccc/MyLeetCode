@@ -14,6 +14,7 @@ class Solution(object):
             num_2 = target - num_1
             if num_2 in nums:
                 j = nums.index(num_2)
+                # 此为关键的判断，避免了取两次
                 if j < i:
                     Index += [j, i]
             i += 1
