@@ -25,7 +25,7 @@ class Solution:
                         z = d[i][j]
                         ret = s[i - z + 1 : i + 1]
         return ret
-        ```
+ ```
         
         
 -------------------------
@@ -54,4 +54,4 @@ class Solution:
         while l >= 0 and r < len(s) and s[l] == s[r]:
             l -= 1; r += 1
         return s[l+1:r]
-        ```
+```
