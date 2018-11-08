@@ -55,3 +55,7 @@ class Solution:
             l -= 1; r += 1
         return s[l+1:r]
 ```
+
+-------------------------
+### 3.Manacher's
+  
