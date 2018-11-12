@@ -92,8 +92,9 @@ class Solution:
 ---------------------------------------
 ##4.Greedy Algorithm  
 只记录一个left-most点--最左端的good点  
-时间复杂度：O(N^2)     
-空间复杂度：O(2N)=O(N)  
+只要能达到left-most点的即为下一个left-most点
+时间复杂度：O(N)     
+空间复杂度：O(1)  
 ```py
 class Solution:
     def canJump(self, nums):
