@@ -27,10 +27,10 @@ class Solution:
         return False
 ```
 ---------------------------------------
-##2.Dynamic Programming Top-down(自顶向下) 
-用一个表存储已访问的位置，避免了重复查询一些bad点
-时间复杂度：O(N^2)  
-空间复杂度：O(2N)=O(N)
+##2.Dynamic Programming Top-down(自顶向下)   
+用一个表存储已访问的位置，避免了重复查询一些bad点  
+时间复杂度：O(N^2)   
+空间复杂度：O(2N)=O(N)  
 ```py
 class Solution:
     
@@ -67,10 +67,10 @@ class Solution:
         return False
 ```
 ---------------------------------------
-##3.Dynamic Programming Bottom-up(自底向上) 
-在前一方法的基础上消除了递归，是通过逆序遍历实现的
-时间复杂度：O(N)  
-空间复杂度：O(1)
+##3.Dynamic Programming Bottom-up(自底向上)   
+在前一方法的基础上消除了递归，是通过逆序遍历实现的  
+时间复杂度：O(N)    
+空间复杂度：O(1)  
 ```py
 class Solution:
     def canJump(self, nums):
@@ -90,10 +90,10 @@ class Solution:
         return Judgment[0] == 1
 ```
 ---------------------------------------
-##4.Greedy Algorithm
-只记录一个left-most点--最左端的good点，
-时间复杂度：O(N^2)  
-空间复杂度：O(2N)=O(N)
+##4.Greedy Algorithm  
+只记录一个left-most点--最左端的good点  
+时间复杂度：O(N^2)     
+空间复杂度：O(2N)=O(N)  
 ```py
 class Solution:
     def canJump(self, nums):
