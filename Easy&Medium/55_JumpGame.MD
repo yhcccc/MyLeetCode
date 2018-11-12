@@ -1,9 +1,9 @@
 ---------------------------------------
 ##1.Backtracking(回溯递归)
-    时间复杂度：O(2^N)
-    --证明
-    ![](https://github.com/yhcccc/MyLeetCode/raw/master/Easy&Medium/A.png)
-    空间复杂度：O(N)
+        时间复杂度：O(2^N)
+        --证明
+        ![](https://github.com/yhcccc/MyLeetCode/raw/master/Easy&Medium/A.png)
+        空间复杂度：O(N)
 ```py
 class Solution:
     def canJump(self, nums):
