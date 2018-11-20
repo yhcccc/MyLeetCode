@@ -1,5 +1,5 @@
 ---------------------------------------------------------
-这题是真的有毒。达到目的不难，但输出重复是个很蛋疼的问题。两种方法：  
+**15** 这题是真的有毒。达到目的不难，但输出重复是个很蛋疼的问题。两种方法：  
 1.借用2Sum的思路   
 时间: O(N^2)
 这里不能对j采用如下方法  
@@ -8,7 +8,7 @@ if j < l - 1 and nums[j] == nums[j+1]:
     continue
 ```
 因为3个0就无法输出了；  
-但是这样的话就会出现重复了，所以不得不用到set(),如下
+但是这样的话就会出现输出重复了，所以不得不用到set(),如下
 ```py
 class Solution():
     def threeSum(self, nums):
@@ -65,4 +65,32 @@ class Solution():
                         r -= 1
                     l += 1; r -= 1            
         return res
+```
+**16** 几乎与上题相同，只用小改一下：  
+```py
+class Solution:
+    def threeSumClosest(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: int
+        """
+        res = float("inf") 
+        nums.sort()
+        n = len(nums)
+        for i in range(n-2):
+            if i > 0 and nums[i] == nums[i-1]:
+                continue
+            l, r = i+1, n-1
+            while l < r:
+                s = nums[i] + nums[l] + nums[r] - target
+                if abs(s) < abs(res):
+                    res = s
+                if s < 0:
+                    l += 1
+                elif s > 0:
+                    r -= 1
+                else:
+                    return target
+        return target + res
 ```
