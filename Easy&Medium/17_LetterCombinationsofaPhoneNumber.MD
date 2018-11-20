@@ -1,4 +1,4 @@
-1.先序遍历
+1.层序遍历
 ```py
 class Solution:
     def letterCombinations(self, digits):
