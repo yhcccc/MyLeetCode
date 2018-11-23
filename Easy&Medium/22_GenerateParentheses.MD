@@ -1,7 +1,8 @@
-  
+<font face="微软雅黑" >
 This is a question worth considering.  
 My thought process: Recursion(Backtracking) -> Recursion(Closure Number) -> Dynamic Planning  
-Tip: For the recursion as well as DP, we first find the initial condition, and the recursive method from n-1 to n.  
+Tip: For the recursion as well as DP, we first find the initial condition, and the recursive method from n-1 to n.   
+</font>  
 --------------------
 **1.Recursion(Backtracking)**  
 We only add '(' or ')' when it will remain a valid sequence.  
