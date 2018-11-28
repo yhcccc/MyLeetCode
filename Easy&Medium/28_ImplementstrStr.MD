@@ -143,7 +143,7 @@ class Solution:
     
 ```
 ------------------
-**4.Sunday Algorithm** 
+**4.Sunday Algorithm**  
 Also see in <https://blog.csdn.net/v_july_v/article/details/7041827> and   
             <https://blog.csdn.net/q547550831/article/details/51860017>  
 Version with cheating
