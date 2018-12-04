@@ -99,8 +99,8 @@ class Solution:
 ```
 In fact, it's hard to get for me.  
 Then I learn boundary problem about binary search @ <https://blog.csdn.net/u011523762/article/details/50878613>  
-I get the method below, based on <<编程珠玑>>. It's most perfect BS.
-But It performed no better than previous one.
+I get the method below, based on <<编程珠玑>>.   
+It's most perfect BS, but It performed no better than previous one.
 ```py
 class Solution:
     def searchRange(self, nums, target):
