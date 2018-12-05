@@ -23,6 +23,33 @@ class Solution:
                     return False
         return True
 ```
+And it's the optimized method below.
+```py
+class Solution:
+    def isValidSudoku(self, board):
+        """
+        :type board: List[List[str]]
+        :rtype: bool
+        """
+        for i in range(9):
+            l = board[i]
+            if not self.is_unit_valid(l):
+                return False
+        for i in range(9):
+            l = [x[i] for x in board]
+            if not self.is_unit_valid(l):
+                return False
+        for i in range(3):
+            for j in range(3):
+                l = [board[x][y] for x in range(3*i, 3*i+3) for y in range(3*j, 3*j+3)]
+                if not self.is_unit_valid(l):
+                    return False
+        return True
+        
+    def is_unit_valid(self, unit):
+        unit = [i for i in unit if i != '.']
+        return len(set(unit)) == len(unit)
+```
 ----------------------------
 **2.O(n^2)**  
 k = i // 3 * 3 + j // 3 can cleverly give # square.  
