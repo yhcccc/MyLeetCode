@@ -8,7 +8,7 @@ in python3
 * Linked list: 2,19,21,24  
 * Parentheses Problem(Stack): 20,22  
 * **StrStr(KMP\BM\Sunday Algorithm): 28**  
-* Binary Search: 33, 34(BoundaryOpt)  
+* Binary Search: 33,34(BoundaryOpt),35(easy)  
 * Sliding Window Method(Two pointer): 3,11,  
 * **Dynamic Planing vs Recursion: 5(LongestCommonSubstring),22,55,**  
-* Interesting or Special Problem: 5(Manacher's),6,11,12&13,17,29(BitOperation),31,55,853  
+* Interesting or Special Problem: 5(Manacher's),6,11,12&13,17,29(BitOperation),31,36,55,853  
