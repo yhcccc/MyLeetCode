@@ -57,7 +57,7 @@ class Solution:
             if i == len(A): return B[j + k]
             elif j == len(B): return A[i + k]
             elif k == 0: return min(A[i], B[j])
-
+            # '+1' avoids useless loop
             halfA = min(len(A) - i, (k + 1) // 2)
             halfB = min(len(B) - j, (k + 1) // 2)
             a = A[i + halfA - 1]
