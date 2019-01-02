@@ -4,7 +4,8 @@ in python3
 ##### EAST -> MEDIUM -> HARD
 每日一题，思考超过10分钟看答案 
 ----------------------------------------
-* Sum problem: 1,15,16,18,39&40(backtrack).  
+* Sum problem: 1,15,16,18. 
+* Backtrack: 39&40,46&47
 See <https://leetcode.com/problems/combination-sum/discuss/16502/A-general-approach-to-backtracking-questions-in-Java-(Subsets-Permutations-Combination-Sum-Palindrome-Partitioning)>  
 * Linked list: 2,19,21,24,61  
 * Parentheses problem(Stack): 20,22,  
