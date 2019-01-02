@@ -1,7 +1,7 @@
 **1.Connected Components(Gragh)**  
 If we draw a graph (with intervals as nodes) that contains undirected edges between all pairs of intervals that overlap, then all intervals in each connected component of the graph can be merged into a single interval.  
 More details @ <https://leetcode.com/problems/merge-intervals/solution/>  
-Even though the result is **Time Limit Exceeded**, the gragh method used is important.
+Even though the result is **Time Limit Exceeded**, the gragh method used is important to understand.
 ```py
 # Definition for an interval.
 # class Interval:
