@@ -8,7 +8,7 @@ in python3
 * Backtrack: 39&40,46&47
 See <https://leetcode.com/problems/combination-sum/discuss/16502/A-general-approach-to-backtracking-questions-in-Java-(Subsets-Permutations-Combination-Sum-Palindrome-Partitioning)>  
 * Linked list: 2,19,21,24,61  
-* Parentheses problem(Stack): 20,22,  
+* Stack: 20,22,71,  
 * **StrStr(KMP\BM\Sunday algorithm): 28**  
 * Divide and conquer;Binary search: 32,33,34(BoundaryOpt),35(easy),53  
 * Sliding window method(Two pointer): 3,11,  
