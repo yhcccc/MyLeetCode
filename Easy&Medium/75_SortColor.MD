@@ -28,6 +28,7 @@ class Solution:
                 nums[i] = 0
                 i += 1
 ```
+[Dutch national flag problem](https://en.wikipedia.org/wiki/Dutch_national_flag_problem)  
 **one pass in place solution**
 ```py
 class Solution:
