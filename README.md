@@ -5,7 +5,7 @@ in python3
 
 ----------------------------------------
 * Sum problem: 1,15,16,18. 
-* Backtrack: 39&40,46&47,78
+* Backtrack: 39&40,46&47,77,78
 See [BackTrack](https://leetcode.com/problems/combination-sum/discuss/16502/A-general-approach-to-backtracking-questions-in-Java-(Subsets-Permutations-Combination-Sum-Palindrome-Partitioning))  
 * Linked list: 2,19,21,24,61  
 * Stack: 20,22,71,94  
