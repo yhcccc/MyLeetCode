@@ -1,6 +1,5 @@
 **DFS**  
 Algorithm  
-We can use the above fact to build our answer.  
 Let dfs(node) be the excess number of coins in the subtree at or below this node:  
 namely, the number of coins in the subtree, minus the number of nodes in the subtree.  
 Then, the number of moves we make from this node to and from its children is abs(dfs(node.left)) + abs(dfs(node.right)).  
