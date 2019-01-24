@@ -10,9 +10,9 @@ See [BackTrack](https://leetcode.com/problems/combination-sum/discuss/16502/A-ge
 * Linked list: 2,19,21,24,61  
 * Stack: 20,22,71,94  
 * **StrStr(KMP\BM\Sunday algorithm): 28**  
-* Divide and conquer;Binary search: 32,33,34(BoundaryOpt),35(easy),53,74  
+* Divide and conquer;Binary search: 32,33,34(BoundaryOpt),35(easy),53,74,209  
 [Boundary problem](https://blog.csdn.net/u011523762/article/details/50878613)  
-* Sliding window method(Two pointer): 3,11,977,978  
+* Sliding window method(Two pointer): 3,11,209,977,978  
 * Gragh: 56,  
 * **Dynamic planing vs Recursion: 5(LongestCommonSubstring),22,32,50,55,62&63,64,70,91,978**  
 * Interesting or Special problem: 5(Manacher's),6,11,12&13,17,29(BitOperation),31,36,48,54&59,55,853  
