@@ -107,7 +107,7 @@ class Solution:
 -------------------
 
 ### 126    
-##BFS(Dijkstra)##    
+**BFS(Dijkstra)**     
 ```py
 from collections import defaultdict
 class Solution:
@@ -174,7 +174,7 @@ while res and res[0][0] != beginWord:
 return res        
 ```
 
-##Bidirectional BFS##  
+**Bidirectional BFS**   
 ```py
 from collections import defaultdict
 class Solution:
