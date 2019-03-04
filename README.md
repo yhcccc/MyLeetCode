@@ -5,7 +5,7 @@ in python3
 
 ----------------------------------------
 * Sum problem: 1,15,16,18. 
-* Backtrack: 39&40,46&47,77,78
+* Backtrack: 39&40,46&47,77,78,126&127
 See [BackTrack](https://leetcode.com/problems/combination-sum/discuss/16502/A-general-approach-to-backtracking-questions-in-Java-(Subsets-Permutations-Combination-Sum-Palindrome-Partitioning))  
 * Linked list: 2,19,21,24,61  
 * Stack: 20,22,71,94  
@@ -15,6 +15,6 @@ See [BackTrack](https://leetcode.com/problems/combination-sum/discuss/16502/A-ge
 * Sliding window method(Two pointer): 3,11,209,977,978  
 * Gragh: 56,  
 * **Dynamic planing vs Recursion: 5(LongestCommonSubstring),22,32,50,55,62&63,64,70,91,118,978**  
-* Interesting or Special problem: 5(Manacher's),6,11,12&13,17,29(BitOperation),31,36,48,54&59,55,853  
-* Tree: 94(Inorder Traversal & Threaded Binary Tree),98,101,102&103(DFS&BFS),105,116,729,979  
+* Interesting or Special problem: 5(Manacher's),6,11,12&13,17,29(BitOperation),31,36,48,54&59,55,126&127,853  
+* Tree: 94(Inorder Traversal & Threaded Binary Tree),98,101,102&103(DFS&BFS),105,116,126&127,729,979  
 * Sort: 973(QuickSort\PriorityQueue)
