@@ -107,7 +107,7 @@ class Solution:
 -------------------
 
 ### 126    
-**BFS(Dijkstra)**     
+**BFS(Dijkstra) + DFS(backtrack)**     
 ```py
 from collections import defaultdict
 class Solution:
@@ -166,7 +166,7 @@ class Solution:
                 self.backtrack(neigh, beginWord, [word] + result)              
 ```
 
-The DFS could be simplied to 
+The DFS(backtrack) could be simplied to 
 ```py
 res = [[endWord]]
 while res and res[0][0] != beginWord:
@@ -174,7 +174,7 @@ while res and res[0][0] != beginWord:
 return res        
 ```
 
-**Bidirectional BFS**   
+**Bidirectional BFS + DFS**   
 ```py
 from collections import defaultdict
 class Solution:
