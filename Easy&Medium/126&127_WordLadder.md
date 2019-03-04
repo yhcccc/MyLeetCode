@@ -104,10 +104,10 @@ class Solution:
             if ans: return ans
         return 0
 ```
+-------------------
 
-
-### 126  
-##BFS(Dijkstra)##
+### 126    
+##BFS(Dijkstra)##    
 ``py
 from collections import defaultdict
 class Solution:
@@ -165,13 +165,14 @@ class Solution:
             for neigh in self.path[word]:
                 self.backtrack(neigh, beginWord, [word] + result)              
 ``
+
 The DFS could be simplied to 
-```
+``py
 res = [[endWord]]
 while res and res[0][0] != beginWord:
     res = [[p]+r for r in res for p in path[r[0]]]
 return res        
-```
+``
 
 ##Bidirectional BFS##  
 ``py
