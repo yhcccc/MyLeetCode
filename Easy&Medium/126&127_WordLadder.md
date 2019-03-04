@@ -108,7 +108,7 @@ class Solution:
 
 ### 126    
 ##BFS(Dijkstra)##    
-``py
+```py
 from collections import defaultdict
 class Solution:
     def __init__(self):
@@ -164,18 +164,18 @@ class Solution:
         if word in self.path:
             for neigh in self.path[word]:
                 self.backtrack(neigh, beginWord, [word] + result)              
-``
+```
 
 The DFS could be simplied to 
-``py
+```py
 res = [[endWord]]
 while res and res[0][0] != beginWord:
     res = [[p]+r for r in res for p in path[r[0]]]
 return res        
-``
+```
 
 ##Bidirectional BFS##  
-``py
+```py
 from collections import defaultdict
 class Solution:
     # Bidirectional-BFS
@@ -220,4 +220,4 @@ class Solution:
         tree = defaultdict(list)
         is_found = bfs_level({beginWord}, {endWord}, tree, True, set(wordList))
         return construct_paths(beginWord, endWord, tree) if is_found else []
-``
+```
