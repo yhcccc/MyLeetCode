@@ -169,7 +169,7 @@ class UnionFind:
                 self.rank[rootx] += 1
             self.count -= 1
 ```
-Simplified code by eliminating using rankList
+Simplified code by eliminating rankList
 ```py
 class Solution:
     def numIslands(self, grid: List[List[str]]) -> int:
