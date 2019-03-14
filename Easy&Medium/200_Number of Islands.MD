@@ -169,3 +169,55 @@ class UnionFind:
                 self.rank[rootx] += 1
             self.count -= 1
 ```
+Simplified code by eliminating using rankList
+```py
+class Solution:
+    def numIslands(self, grid: List[List[str]]) -> int:
+        if not grid or not grid[0]: return 0
+        h, w = len(grid), len(grid[0])
+        
+        uf = UnionFind(grid)
+        for i in range(h):
+            for j in range(w):
+                if grid[i][j] == '1':
+                    grid[i][j] = '0'
+                    if i > 0 and grid[i-1][j] == '1':
+                        uf.union(i * w + j, (i-1) * w + j)
+                    if i < h-1 and grid[i+1][j] == '1': 
+                        uf.union(i * w + j, (i+1) * w + j)
+                    if j > 0 and grid[i][j-1] == '1': 
+                        uf.union(i * w + j, i * w + (j-1))
+                    if j < w-1 and grid[i][j+1] == '1': 
+                        uf.union(i * w + j, i * w + (j+1))
+        return uf.count
+                    
+
+class UnionFind:
+    # By rank
+    def __init__(self, grid):
+        h, w = len(grid), len(grid[0])
+        self.parent = [-1 for _ in range(h * w)] # start at 1(0 and index0 are repeat)
+        self.count = sum(grid, []).count('1')
+                    
+    def find(self, i):
+        # index i
+        if self.parent[i] < 0:
+            return i
+        else:
+            self.parent[i] = self.find(self.parent[i])
+            return self.parent[i]
+        
+    def union(self, x, y):
+        # print('1', self.parent, self.count)
+        rootx = self.find(x)
+        rooty = self.find(y)
+        if rootx != rooty:
+            if self.parent[rootx] > self.parent[rooty]: # Rooty is deeper set
+                self.parent[rootx] = rooty
+            else:
+                if self.parent[rootx] == self.parent[rooty]:
+                    self.parent[rootx] -= 1
+                self.parent[rooty] = rootx
+            self.count -= 1
+        # print('2', self.parent, self.count)
+```
