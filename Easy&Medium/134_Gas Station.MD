@@ -3,8 +3,7 @@ A clever idea:
 I have thought for a long time and got two ideas:  
 * If car starts at A and can not reach B. Any station between A and B
 can not reach B.(B is the first station that A can not reach.)  
-* If the total number of gas is bigger than the total number of cost. There must be a solution.
-(Should I prove them?)  
+* If the total number of gas is bigger than the total number of cost. There must be a solution.  
 ```py
 class Solution:
     def canCompleteCircuit(self, gas: List[int], cost: List[int]) -> int:
