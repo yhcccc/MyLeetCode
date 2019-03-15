@@ -18,6 +18,7 @@ class Solution:
         if n == 0:
             raise ValueError
             
+        # Imax must be set as m, since m-1 may lead to imax = -1.
         imin = 0; imax = m; half = (m + n + 1) // 2
         while imin <= imax:
             i = (imin + imax) // 2
