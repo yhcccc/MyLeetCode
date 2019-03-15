@@ -14,7 +14,7 @@ See [BackTrack](https://leetcode.com/problems/combination-sum/discuss/16502/A-ge
 [Boundary problem](https://blog.csdn.net/u011523762/article/details/50878613)  
 * Sliding window method(Two pointer): 3,11,209,977,978  
 * Gragh: 56,  
-* **Dynamic planing vs Recursion: 5(LongestCommonSubstring),22,32,50,55,62&63,64,70,91,118,140&141,978**  
+* **Dynamic planing vs Recursion: 4,5(LongestCommonSubstring),22,32,50,55,62&63,64,70,91,118,140&141,978**  
 * Interesting or Special problem: 5(Manacher's),6,11,12&13,17,29(BitOperation),31,36,48,54&59,55,126&127,134(Greedy),136(BitOperation),146,853  
 * Tree: 94(Inorder Traversal & Threaded Binary Tree),98,101,102&103(DFS&BFS),105,116,126&127,729,979  
 * Sort: 973(QuickSort\PriorityQueue)
