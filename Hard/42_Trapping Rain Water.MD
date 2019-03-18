@@ -1,7 +1,7 @@
-My Code:
-TC: O(n^2)(worst: n+(n-1)+...+1=n(n-1)/2).  
-Since my code benefits from the defined function in Py3 max() that runs faster, it performs well in submission.  
-Just find the max height(bidirectional), and use ```- sum(height[m+1:m_cur])``` can skip many O(1) operation.
+My Code:  
+TC: O(n^2) (worst: n+(n-1)+...+1=n(n-1)/2).  
+Since my code benefits from the defined function in Py3 ```max()``` that runs faster, it performs well in submission.  
+**Just find the max height(bidirectional), and use ```- sum(height[m+1:m_cur])``` can skip many O(1) operation.**  
 ```py
 def trap(self, height: List[int]) -> int:
         
