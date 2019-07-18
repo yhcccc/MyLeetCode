@@ -23,6 +23,87 @@ class Solution:
 ```
 More answer could be found at <https://leetcode.com/problems/spiral-matrix/solution/>.  
 
+**A simple Method Easy to Remember**
+```
+class Solution:
+    def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
+        res = []
+        if len(matrix) == 0: return res
+        
+        rowBegin = 0; rowEnd = len(matrix)-1
+        colBegin = 0; colEnd = len(matrix[0])-1
+        while rowBegin <= rowEnd and colBegin <= colEnd:
+            
+            for j in range(colBegin, colEnd+1):
+                res.append(matrix[rowBegin][j])
+            rowBegin += 1
+            
+            for j in range(rowBegin, rowEnd+1):
+                res.append(matrix[j][colEnd])
+            colEnd -= 1
+            
+            if rowBegin <= rowEnd:
+                for j in range(colEnd, colBegin-1,-1):
+                    res.append(matrix[rowEnd][j])
+            rowEnd -= 1
+            
+            if colBegin <= colEnd:
+                for j in range(rowEnd, rowBegin-1,-1):
+                    res.append(matrix[j][colBegin])
+            colBegin += 1
+            
+        return res
+```
+**Solution**  
+1.  
+```
+class Solution:
+    def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
+        if not matrix: return []
+        R, C = len(matrix), len(matrix[0])
+        seen = [[False] * C for _ in matrix]
+        res = []
+        dr = [0, 1, 0, -1]
+        dc = [1, 0, -1, 0]
+        r = c = di = 0
+        for _ in range(R * C):
+            res.append(matrix[r][c])
+            seen[r][c] = True
+            cr, cc = r + dr[di], c + dc[di]
+            if 0 <= cr < R and 0 <= cc < C and not seen[cr][cc]:
+                r, c = cr, cc
+            else:
+                di = (di + 1) % 4
+                r, c = r + dr[di], c + dc[di]
+        return res  
+```
+2.  
+```
+class Solution:
+    def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
+        def spiral_coords(r1, c1, r2, c2):
+            for c in range(c1, c2 + 1):
+                yield r1, c
+            for r in range(r1 + 1, r2 + 1):
+                yield r, c2
+            if r1 < r2 and c1 < c2:
+                for c in range(c2 - 1, c1, -1):
+                    yield r2, c
+                for r in range(r2, r1, -1):
+                    yield r, c1
+        
+        if not matrix: return []
+        res = []
+        r1, r2 = 0, len(matrix) - 1
+        c1, c2 = 0, len(matrix[0]) - 1
+        while r1 <= r2 and c1 <= c2:
+            for r, c in spiral_coords(r1, c1, r2, c2):
+                res.append(matrix[r][c])
+            r1 += 1; r2 -= 1
+            c1 += 1; c2 -= 1
+        return res
+```
+
 An amazing answer @ <https://leetcode.com/problems/spiral-matrix/discuss/20571/1-liner-in-Python-%2B-Ruby>.
 ```py
 def spiralOrder(self, matrix):
