@@ -1,6 +1,6 @@
 #### Although it's a easy problem, it is necessary to delve into it.  
 ------------------
-**1.The advantage of python**  
+**1.Primary**  
 ```py
 class Solution:
     def strStr(self, haystack, needle):
